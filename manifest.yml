@@ -15,7 +15,8 @@ spec:
         app: webapp
     spec:
       containers:
-      - image: adhig93/k8snodejs:version_0
+      - image: adhig93/kubernetesjenkins:latest
+        imagePullPolicy: Always
         name: nodejs
         ports:
         - containerPort: 3080
